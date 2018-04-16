@@ -18,7 +18,7 @@ const AppIntro = styled.p`
   font-size: large;
 `;
 
-const App = styled.div`
+const AppBody = styled.div`
   text-align: center;
 `;
 
@@ -26,10 +26,10 @@ const Title = styled.h1`
   font-size: 1.5em;
 `;
 
-class App2 extends Component {
+class App extends Component {
   render() {
     return (
-      <App>
+      <AppBody>
         <AppHeader>
           <Logo src={logo} alt="logo" />
           <Title>Welcome to React</Title>
@@ -37,9 +37,9 @@ class App2 extends Component {
         <AppIntro>
           To get started, edit <code>src/App.js</code> and save to reload.
         </AppIntro>
-      </App>
+      </AppBody>
     );
   }
 }
 
-export default App2;
+export default App;
