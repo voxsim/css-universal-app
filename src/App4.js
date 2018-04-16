@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Text, View, Image } from 'react-native';
 import styled from "styled-components";
 
-const AppHeader = styled.div`
+const AppHeader = styled.View`
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 `;
 
-const Logo = styled.img`
-  animation: App-logo-spin infinite 20s linear;
+const Logo = styled.Image`
   height: 80px;
 `;
 
-const AppIntro = styled.p`
-  font-size: large;
+const AppIntro = styled.Text`
+  font-size: 18px;
 `;
 
-const AppBody = styled.div`
+const AppBody = styled.View`
   text-align: center;
 `;
 
-const Title = styled.h1`
-  font-size: 1.5em;
+const Title = styled.Text`
+  font-size: 24px;
 `;
 
 class App extends Component {
@@ -31,11 +31,11 @@ class App extends Component {
     return (
       <AppBody>
         <AppHeader>
-          <Logo src={logo} alt="logo" />
+          <Logo source={logo} alt="logo" />
           <Title>Welcome to React</Title>
         </AppHeader>
         <AppIntro>
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit src/App.js and save to reload.
         </AppIntro>
       </AppBody>
     );

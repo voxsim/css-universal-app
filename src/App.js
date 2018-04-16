@@ -1,3 +1,3 @@
-import App from './App3.js';
+import App from './App5.js';
 
-export default App;
+export default App('web');
