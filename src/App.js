@@ -1,3 +1,5 @@
-import App from './App5.js';
+import App from './App8.js';
 
-export default App('web');
+const webComponent = (component) => component;
+
+export default App(webComponent);
