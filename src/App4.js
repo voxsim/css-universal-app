@@ -16,14 +16,15 @@ const Logo = styled.Image`
 
 const AppIntro = styled.Text`
   font-size: 18px;
+  text-align: center;
 `;
 
 const AppBody = styled.View`
-  text-align: center;
 `;
 
 const Title = styled.Text`
   font-size: 24px;
+  text-align: center;
 `;
 
 class App extends Component {

@@ -1,5 +1,5 @@
 import Expo from 'expo';
-import App from './src/App8';
+import App from './src/App6';
 import React from 'react';
 import {View, Text} from 'react-native';
 import SvgUri from 'react-native-svg-uri';

@@ -1,38 +1,34 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styled from "styled-components";
-import { Text, View, Image } from 'react-native';
 
-const dispatch = (component, platform) => {
-  if(platform === 'web') {
-    return component;
-  }
-
-  return 'it stills too early for mobile';
-}
-
-const runApp = (platform) => {
-  const AppHeader = styled(dispatch('div', platform))`
+const runApp = (platformComponent) => {
+  const AppHeader = styled(platformComponent('div'))`
     background-color: #222;
     height: 150px;
     padding: 20px;
-    color: white;
-  `;
-
-  const Logo = styled(dispatch('img', platform))`
-    height: 80px;
-  `;
-
-  const AppIntro = styled(dispatch('p', platform))`
-    font-size: 18px;
-  `;
-
-  const AppBody = styled(dispatch('div', platform))`
+    align-items: center;
+    justify-content: center;
     text-align: center;
   `;
 
-  const Title = styled(dispatch('p', platform))`
+  const Logo = styled(platformComponent('img'))`
+    height: 80px;
+  `;
+
+  const AppIntro = styled(platformComponent('p'))`
+    text-align: center;
+    font-size: 18px;
+  `;
+
+  const AppBody = styled(platformComponent('div'))`
+    flex: 1;
+  `;
+
+  const Title = styled(platformComponent('p'))`
+    text-align: center;
     font-size: 24px;
+    color: white;
   `;
 
   return class App extends Component {

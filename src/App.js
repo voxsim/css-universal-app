@@ -1,4 +1,4 @@
-import App from './App8.js';
+import App from './App6';
 
 const webComponent = (component) => component;
 
