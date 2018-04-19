@@ -7,9 +7,7 @@ const runApp = (platformComponent) => {
     background-color: #222;
     height: 150px;
     padding: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    color: white;
   `;
 
   const Logo = styled(platformComponent('img'))`
@@ -17,18 +15,15 @@ const runApp = (platformComponent) => {
   `;
 
   const AppIntro = styled(platformComponent('p'))`
-    text-align: center;
     font-size: 18px;
   `;
 
   const AppBody = styled(platformComponent('div'))`
-    flex: 1;
+    text-align: center;
   `;
 
   const Title = styled(platformComponent('p'))`
-    text-align: center;
     font-size: 24px;
-    color: white;
   `;
 
   return class App extends Component {
