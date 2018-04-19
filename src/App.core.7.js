@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import styled from "styled-components";
 
-const runApp = (platform) => {
-  const AppHeader = styled.div`
+const runApp = (platformComponent) => {
+  const AppHeader = styled(platformComponent('div'))`
     background-color: #222;
     height: 150px;
     padding: 20px;
-    color: white;
-  `;
-
-  const Logo = styled.img`
-    height: 80px;
-  `;
-
-  const AppIntro = styled.p`
-    font-size: 18px;
-  `;
-
-  const AppBody = styled.div`
+    align-items: center;
+    justify-content: center;
     text-align: center;
   `;
 
-  const Title = styled.p`
+  const Logo = styled(platformComponent('img'))`
+    height: 80px;
+  `;
+
+  const AppIntro = styled(platformComponent('p'))`
+    text-align: center;
+    font-size: 18px;
+  `;
+
+  const AppBody = styled(platformComponent('div'))`
+    flex: 1;
+  `;
+
+  const Title = styled(platformComponent('p'))`
+    text-align: center;
     font-size: 24px;
+    color: white;
   `;
 
   return class App extends Component {
@@ -35,7 +40,7 @@ const runApp = (platform) => {
             <Title>Welcome to React</Title>
           </AppHeader>
           <AppIntro>
-            To get started, edit <code>src/App.js</code> and save to reload.
+            To get started, edit src/App.js and save to reload.
           </AppIntro>
         </AppBody>
       );

@@ -1,3 +1,3 @@
-import App from './App.web.1';
+import App from './App.web.2';
 
 export default App;
