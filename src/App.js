@@ -1,5 +1,3 @@
-import App from './App6';
+import App from './App.web.1';
 
-const webComponent = (component) => component;
-
-export default App(webComponent);
+export default App;

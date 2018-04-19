@@ -1,5 +1,5 @@
 {
-  "name": "css-universally-app",
+  "name": "css-universal-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "react-scripts": "1.1.4",
     "styled-components": "^3.2.5"
   },
-  "main": "./index.mobile.js",
+  "main": "./src/App.mobile.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
